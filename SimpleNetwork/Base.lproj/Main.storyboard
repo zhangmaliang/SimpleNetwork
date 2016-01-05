@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,93 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-5z-j4w">
+                                <rect key="frame" x="228" y="180" width="144" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.70551500820000002" green="0.70608038650000005" blue="0.70780222039999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="延时短的">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3yp-j9-66c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUo-kz-YFu">
+                                <rect key="frame" x="228" y="256" width="144" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.70551500820000002" green="0.70608038650000005" blue="0.70780222039999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="延时长的">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="27M-Tw-G3j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhd-PR-Hbi">
+                                <rect key="frame" x="228" y="323" width="144" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.70551500820000002" green="0.70608038650000005" blue="0.70780222039999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="普通的">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sel-aP-B6l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJW-BE-IIn">
+                                <rect key="frame" x="228" y="389" width="144" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.70551500820000002" green="0.70608038650000005" blue="0.70780222039999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="不出现">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="njJ-Xb-LGB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGc-HL-9lh">
+                                <rect key="frame" x="228" y="115" width="144" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GEN-GL-obf"/>
+                                    <constraint firstAttribute="width" constant="144" id="euw-Yg-k8k"/>
+                                </constraints>
+                                <color key="tintColor" red="0.70551500820000002" green="0.70608038650000005" blue="0.70780222039999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="不延时">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="click1" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mwv-ci-UvT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8KW-5z-j4w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A7e-uo-wvr"/>
+                            <constraint firstItem="GGc-HL-9lh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="95" id="Bf8-yW-aD8"/>
+                            <constraint firstItem="BUo-kz-YFu" firstAttribute="width" secondItem="GGc-HL-9lh" secondAttribute="width" id="ILj-Gv-gcW"/>
+                            <constraint firstItem="oJW-BE-IIn" firstAttribute="top" secondItem="Jhd-PR-Hbi" secondAttribute="bottom" constant="36" id="Jvd-Fu-Rvg"/>
+                            <constraint firstItem="GGc-HL-9lh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KDK-vr-jzc"/>
+                            <constraint firstItem="8KW-5z-j4w" firstAttribute="width" secondItem="GGc-HL-9lh" secondAttribute="width" id="MOk-Bz-xU4"/>
+                            <constraint firstItem="8KW-5z-j4w" firstAttribute="height" secondItem="GGc-HL-9lh" secondAttribute="height" id="QX3-tY-yZx"/>
+                            <constraint firstItem="BUo-kz-YFu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sp7-Ub-IyH"/>
+                            <constraint firstItem="oJW-BE-IIn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WPU-6u-231"/>
+                            <constraint firstItem="8KW-5z-j4w" firstAttribute="top" secondItem="GGc-HL-9lh" secondAttribute="bottom" constant="35" id="Wtu-vu-rYy"/>
+                            <constraint firstItem="BUo-kz-YFu" firstAttribute="height" secondItem="GGc-HL-9lh" secondAttribute="height" id="ZKz-jI-zth"/>
+                            <constraint firstItem="BUo-kz-YFu" firstAttribute="top" secondItem="8KW-5z-j4w" secondAttribute="bottom" constant="46" id="bWG-z4-OEk"/>
+                            <constraint firstItem="Jhd-PR-Hbi" firstAttribute="width" secondItem="GGc-HL-9lh" secondAttribute="width" id="gzn-B0-j3m"/>
+                            <constraint firstItem="Jhd-PR-Hbi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m33-rY-zPx"/>
+                            <constraint firstItem="oJW-BE-IIn" firstAttribute="width" secondItem="GGc-HL-9lh" secondAttribute="width" id="n9j-6N-mlN"/>
+                            <constraint firstItem="Jhd-PR-Hbi" firstAttribute="top" secondItem="BUo-kz-YFu" secondAttribute="bottom" constant="37" id="nU3-nZ-AMT"/>
+                            <constraint firstItem="Jhd-PR-Hbi" firstAttribute="height" secondItem="GGc-HL-9lh" secondAttribute="height" id="qIB-3n-Y3m"/>
+                            <constraint firstItem="oJW-BE-IIn" firstAttribute="height" secondItem="GGc-HL-9lh" secondAttribute="height" id="xOk-so-h1v"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="339" y="316"/>
         </scene>
     </scenes>
 </document>

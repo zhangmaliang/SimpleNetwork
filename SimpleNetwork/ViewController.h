@@ -2,8 +2,8 @@
 //  ViewController.h
 //  SimpleNetwork
 //
-//  Created by apple on 16/1/5.
-//  Copyright © 2016年 apple. All rights reserved.
+//  Created by apple on 15/12/31.
+//  Copyright © 2015年 apple. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
